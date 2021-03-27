@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>AJAX</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/handleLocation.js" defer></script>
+    <script src="./scripts/handleConversion.js" defer></script>
+</head>
+
+<body>
+
+    <div class="tab-container">
+        <div class="weather-app">
+            <header class="top">
+                <div class="time"></div>
+                <div class="lens "></div>
+                <div class="battery-icon"><i class="fas fa-wifi"></i><i class="fas fa-battery-half"></i></div>
+            </header>
+
+            <div class="search-bar">
+                <label>
+                    <input type="text" id="search" name="search" placeholder="Search location">
+                </label>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <h1 class="location"></h1>
+            </div>
+            <div>
+                <h3 class="status"></h3>
+            </div>
+            <div>
+                <h2 class="temperature">40</h2>
+            </div>
+            <div>
+                <ul class="radio-btn">
+                    <li class="c-option">
+                        <input type="radio" id="c-option" value="metric" name="selector">
+                        <label for="c-option">C</label>
+                    </li>
+
+                    <li class="f-option">
+                        <input type="radio" id="f-option" value="imperial" name="selector">
+                        <label for="f-option">F</label>
+                    </li>
+            </div>
+            <div>
+                <h4 class="status-icon"></h4>
+            </div>
+            <ul class="container-temp">
+                <li>Date: <span class="time-zone"></span></li>
+                <li>Max Temperature: <span class="max-temp"></span></li>
+                <li>Min Temperature: <span class="min-temp"></span></li>
+                <li>Humidity: <span class="humidity"></span></li>
+                <li>Pressure: <span class="pressure"></span></li>
+                <li>Feels Like: <span class="feels-like"></span></li>
+            </ul>
+        </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
